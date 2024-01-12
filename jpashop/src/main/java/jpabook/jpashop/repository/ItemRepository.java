@@ -23,6 +23,8 @@ public class ItemRepository {
         }
         return item.getId();
     }
+
+
     // 단건 조회
     public Item findOne(Long id){
         return em.find(Item.class, id);
